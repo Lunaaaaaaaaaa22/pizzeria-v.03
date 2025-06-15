@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #dc3545;
+  --secondary-color: #343a40;
+}
+
+.sidebar {
+  background-color: var(--secondary-color);
+  color: white;
+  height: 100vh;
+  position: fixed;
+  width: 250px;
+}
+
+.sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  border-left: 3px solid transparent;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid var(--primary-color);
+}
+
+.sidebar .nav-link i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.low-stock {
+  background-color: #fff3cd !important;
+}
+
+.critical-stock {
+  background-color: #f8d7da !important;
+}
+
+.table-hover tbody tr:hover {
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.badge-ingrediente {
+  background-color: #6f42c1;
+}
+
+.badge-bebida {
+  background-color: #20c997;
+}
+
+.badge-pizza {
+  background-color: #fd7e14;
+}
+
+.badge-otros {
+  background-color: #6c757d;
+}
+
+.stock-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

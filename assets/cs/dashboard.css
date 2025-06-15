@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #dc3545; /* Rojo pizzero */
+  --secondary-color: #343a40; /* Gris oscuro */
+  --success-color: #28a745; /* Verde */
+  --warning-color: #ffc107; /* Amarillo */
+  --info-color: #17a2b8; /* Azul claro */
+  --dark-color: #343a40; /* Gris oscuro */
+}
+
+.sidebar {
+  background-color: var(--secondary-color);
+  color: white;
+  height: 100vh;
+  position: fixed;
+  width: 250px;
+}
+
+.sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  border-left: 3px solid transparent;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  transition: all 0.2s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid var(--primary-color);
+}
+
+.sidebar .nav-link i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.stat-card {
+  border-radius: 10px;
+  transition: transform 0.3s;
+  color: white;
+  border: none;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.welcome-card {
+  border-left: 5px solid var(--primary-color);
+}
+
+.preview-card {
+  transition: all 0.3s;
+  height: 100%;
+}
+
+.preview-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.badge-inventario {
+  font-size: 0.8rem;
+  padding: 5px 8px;
+}
+
+.bg-ingrediente {
+  background-color: #6f42c1;
+}
+.bg-bebida {
+  background-color: #20c997;
+}
+.bg-pizza {
+  background-color: #fd7e14;
+}
+.bg-otros {
+  background-color: #6c757d;
+}
+
+.low-stock {
+  border-left: 4px solid var(--warning-color);
+}
+.critical-stock {
+  border-left: 4px solid var(--primary-color);
+}
